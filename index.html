@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,27 +14,47 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        table{
+        .dat-styling {
+            background-color: aqua;
+            width: 120px;
+            margin-left: 2%;
+            text-align: center;
+            padding: 1%;
+            color: white;
+            border-radius: 20px;
+            text-shadow: black;
+            box-shadow: black;
+        }
+
+        table {
             border-collapse: collapse;
             width: 100%;
             font-size: 18px;
             font-style: normal;
-            text-align:center;
+            text-align: center;
         }
-        h1,h2,h3{
+
+        h1,
+        h2,
+        h3 {
             font-style: normal;
-            text-align:center;
+            text-align: center;
         }
-        th{
+
+        th {
             background-color: deepskyblue;
             color: white;
         }
-        th,td{
-            border : 2px solid #ddd;
+
+        th,
+        td {
+            border: 2px solid #ddd;
             padding: 15px;
         }
+
         button {
-            background-color: darkturquoise; /* Green */
+            background-color: darkturquoise;
+            /* Green */
             border: none;
             color: white;
             padding: 10px 25px;
@@ -42,84 +63,46 @@
             display: inline-block;
             font-size: 10px;
         }
-        input{
+
+        input {
             border-style: none;
         }
-        .mobile-view{
-        display:none;
+
+        .mobile-view {
+            display: none;
         }
-        .res-tab{
-        display:block
+
+        .res-tab {
+            display: block
         }
-        
+
+        .uk-card {
+            background-color: rgb(227, 230, 230);
+        }
+
         @media only screen and (max-width: 600px) {
-             .mobile-view{
-        display:block;
+            .mobile-view {
+                display: block;
+                width: 100%;
+                height: 200px;
+            }
+
+            .res-tab {
+                display: none;
+            }
+
         }
-        .res-tab{
-        display:none;
-        }
-    
-}
     </style>
 </head>
+
 <body>
-    <div class="mobile-view container">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+    <br>
+    <br>
+    <div class="box">
 
-    <ul class="uk-slider-items uk-grid">
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="images/photo.jpg" alt="">
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">Bottom</h3>
-                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </li>
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="images/dark.jpg" alt="">
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">Bottom</h3>
-                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </li>
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="images/light.jpg" alt="">
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">Bottom</h3>
-                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </li>
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="images/photo2.jpg" alt="">
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">Bottom</h3>
-                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </li>
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="images/photo3.jpg" alt="">
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">Bottom</h3>
-                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-</div>
     </div>
+
+
     <div class="res-tab">
         <h1><b>Walchand Institute of Technology, Solapur</b><br> <b>Department of Electronics Engineering</b> </h1>
         <h2><b>Academic Year 2021-22</b></h2>
@@ -139,32 +122,50 @@
                 <tr>
                     <td><b>1</b></td>
                     <td><input class="w3-input" type="time" style="width:30%" placeholder="time"></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
                 </tr>
                 <tr>
                     <td><b>2</b></td>
                     <td><input class="w3-input" type="time" style="width:30%" placeholder="time"></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
                 </tr>
                 <tr>
                     <td><b>3</b></td>
                     <td><input class="w3-input" type="time" style="width:30%" placeholder="time"></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
                 </tr>
                 <tr>
                     <td><b>4</b></td>
@@ -173,12 +174,18 @@
                 <tr>
                     <td><b>5</b></td>
                     <td><input class="w3-input" type="time" style="width:30%" placeholder="time"></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
-                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%" placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
+                    <td rowspan="2"><input class="w3-input" type="text" style="width:30%"
+                            placeholder="Subject"><br><button>Attend</button></td>
                 </tr>
                 <tr>
                     <td><b>6</b></td>
@@ -192,40 +199,251 @@
                 <tr>
                     <td><input class="w3-input" type="text" style="width:35%" placeholder="ABBR"></td>
                     <td colspan="4"><input class="w3-input" type="text" style="width:50%" placeholder="Subject"></td>
-                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="faculty name"></td>
+                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="faculty name">
+                    </td>
                 </tr>
                 <tr>
                     <td><input class="w3-input" type="text" style="width:35%" placeholder="ABBR"></td>
                     <td colspan="4"><input class="w3-input" type="text" style="width:50%" placeholder="Subject"></td>
-                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name"></td>
+                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name">
+                    </td>
                 </tr>
                 <tr>
                     <td><input class="w3-input" type="text" style="width:35%" placeholder="ABBR"></td>
                     <td colspan="4"><input class="w3-input" type="text" style="width:50%" placeholder="Subject"></td>
-                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name"></td>
+                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name">
+                    </td>
                 </tr>
                 <tr>
                     <td><input class="w3-input" type="text" style="width:35%" placeholder="ABBR"></td>
                     <td colspan="4"><input class="w3-input" type="text" style="width:50%" placeholder="Subject"></td>
-                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name"></td>
+                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name">
+                    </td>
                 </tr>
                 <tr>
                     <td><input class="w3-input" type="text" style="width:35%" placeholder="ABBR"></td>
                     <td colspan="4"><input class="w3-input" type="text" style="width:50%" placeholder="Subject"></td>
-                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name"></td>
+                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name">
+                    </td>
                 </tr>
                 <tr>
                     <td><input class="w3-input" type="text" style="width:35%" placeholder="ABBR"></td>
                     <td colspan="4"><input class="w3-input" type="text" style="width:50%" placeholder="Subject"></td>
-                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name"></td>
+                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name">
+                    </td>
                 </tr>
                 <tr>
                     <td><input class="w3-input" type="text" style="width:35%" placeholder="ABBR"></td>
                     <td colspan="4"><input class="w3-input" type="text" style="width:50%" placeholder="Subject"></td>
-                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name"></td>
+                    <td colspan="3"><input class="w3-input" type="text" style="width:50%" placeholder="Faculty name">
+                    </td>
                 </tr>
             </tbody>
         </table>
-    </div>   
+    </div>
+
+
+    <script>
+        var html = '';
+        var dayarr = ['Monday', "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        for (var i = 0; i < 6; i++) {
+            var segment = `
+            <h4 class="dat-styling">${dayarr[i]}</h4>
+            <hr>
+             <div class="uk-position-relative uk-visible-toggle uk-light mobile-view" tabindex="-1"
+            uk-slider="clsActivated: uk-transition-active; center: true">
+            <ul class="uk-slider-items uk-grid">
+                <li class="uk-width-3-4">
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+
+                                <div class="uk-card-body">
+                                    <h3 style="float:left;margin-top:0%;">subject name</h3><br>
+
+                                    <p style="float:right;margin-top:0%">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        elit, sed do
+                                        eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Media Bottom</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                                <div class="uk-card-media-bottom">
+                                    <img src="images/light.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+
+                                <div class="uk-card-body">
+                                    <h3 style="float:left;margin-top:0%;">subject name</h3><br>
+
+                                    <p style="float:right;margin-top:0%">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        elit, sed do
+                                        eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Media Bottom</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                                <div class="uk-card-media-bottom">
+                                    <img src="images/light.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+
+                                <div class="uk-card-body">
+                                    <h3 style="float:left;margin-top:0%;">subject name</h3><br>
+
+                                    <p style="float:right;margin-top:0%">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        elit, sed do
+                                        eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Media Bottom</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                                <div class="uk-card-media-bottom">
+                                    <img src="images/light.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+
+                                <div class="uk-card-body">
+                                    <h3 style="float:left;margin-top:0%;">subject name</h3><br>
+
+                                    <p style="float:right;margin-top:0%">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        elit, sed do
+                                        eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Media Bottom</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                                <div class="uk-card-media-bottom">
+                                    <img src="images/light.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+
+                                <div class="uk-card-body">
+                                    <h3 style="float:left;margin-top:0%;">subject name</h3><br>
+
+                                    <p style="float:right;margin-top:0%">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        elit, sed do
+                                        eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Media Bottom</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                                <div class="uk-card-media-bottom">
+                                    <img src="images/light.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+
+                                <div class="uk-card-body">
+                                    <h3 style="float:left;margin-top:0%;">subject name</h3><br>
+
+                                    <p style="float:right;margin-top:0%">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        elit, sed do
+                                        eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Media Bottom</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                                <div class="uk-card-media-bottom">
+                                    <img src="images/light.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>`;
+            html += segment
+        }
+        console.log(html);
+        document.querySelector('.box').innerHTML = html;
+    </script>
 </body>
+
+
 </html>
+<!h4>
+
+    <-->
