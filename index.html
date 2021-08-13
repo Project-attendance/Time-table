@@ -248,10 +248,11 @@
         var dayarr = ['Monday', "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
         for (var i = 0; i < 6; i++) {
             var segment = `
-            <h4 class="dat-styling">${dayarr[i]}</h4>
-            <hr>
+           
              <div class="uk-position-relative uk-visible-toggle uk-light mobile-view" tabindex="-1"
             uk-slider="clsActivated: uk-transition-active; center: true">
+             <h4 class="dat-styling">${dayarr[i]}</h4>
+            <hr>
             <ul class="uk-slider-items uk-grid">
                 <li class="uk-width-3-4">
                     <div class="uk-child-width-1-2@m" uk-grid>
