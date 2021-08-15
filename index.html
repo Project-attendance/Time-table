@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 15px;
+            font-style: normal;
+            text-align:center;
+        }
+        h1,h2,h3{
+            font-style: normal;
+            text-align:center;
+        }
+        th{
+            background-color: deepskyblue;
+            color: white;
+        }
+        th,td{
+            border : 2px solid #ddd;
+            padding: 15px;
+        }
+        button {
+            background-color: darkturquoise; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="res-tab">
+        <h3><br><b>Academic Time Table</b></h3>
+        <table>
+            <tbody>
+                <tr>
+                    <th><b>Period</b></th>
+                    <th><b>Time</b></th>
+                    <th><b>Monday</b></th>
+                    <th><b>Tuesday</b></th>
+                    <th><b>Wednesday</b></th>
+                    <th><b>Thursday</b></th>
+                    <th><b>Friday</b></th>
+                    <th><b>Saturday</b></th>
+                </tr>
+                <tr>
+                    <td><b>1</b></td>
+                    <td>9:00 AM to<br>9:50 AM</td>
+                    <td>IOT<br><button>Attend</button></td>
+                    <td>PE<br><button>Attend</button></td>
+                    <td>PE<br><button>Attend</button></td>
+                    <td>IOT<br><button>Attend</button></td>
+                    <td>IOT<br><button>Attend</button></td>
+                    <td>PE<br><button>Attend</button></td>
+                </tr>
+                <tr>
+                    <td><b>2</b></td>
+                    <td>10:00 AM to<br>10:50 AM</td>
+                    <td>MT<br><button>Attend</button></td>
+                    <td>EL-I<br><button>Attend</button></td>
+                    <td>EL-I<br><button>Attend</button></td>
+                    <td>MT<br><button>Attend</button></td>
+                    <td>MT<br><button>Attend</button></td>
+                    <td>EL-I<br><button>Attend</button></td>
+                </tr>
+                <tr>
+                    <td><b>3</b></td>
+                    <td>11:00 AM to<br>11:50 AM</td>
+                    <td rowspan="2">Java<br>(SSU)<br><button>Attend</button></td>
+                    <td rowspan="2">Programming<br>MCQ<br>(VVA)<br><button>Attend</button></td>
+                    <td rowspan="2">Aptitude<br>(RRM)<br><button>Attend</button></td>
+                    <td rowspan="2">Aptitude<br>(KRB)<br><button>Attend</button></td>
+                    <td rowspan="2">Programming<br>MCQ<br>(SNC)<br><button>Attend</button></td>
+                    <td rowspan="2">Aptitude<br>(SRB)<br><button>Attend</button></td>
+                </tr>
+                <tr>
+                    <td><b>4</b></td>
+                    <td>12:00 PM to<br>12:50 PM</td>
+                </tr>
+                <tr>
+                    <td><b>5</b></td>
+                    <td>02:00 PM to<br>2:50 PM</td>
+                    <td rowspan="2">EL-I<br>Tutorial<br><button>Attend</button></td>
+                    <td rowspan="2">Project<br>(All Guides)<br><button>Attend</button></td>
+                    <td rowspan="2">IOT<br>Practical<br><button>Attend</button></td>
+                    <td rowspan="2">CMOS<br>Practical<br><button>Attend</button></td>
+                    <td rowspan="2">PE<br>Practical<br><button>Attend</button></td>
+                    <td rowspan="2">Project<br>(All Guides)<br><button>Attend</button></td>
+                </tr>
+                <tr>
+                    <td><b>6</b></td>
+                    <td>3:00 PM to<br>3:50 PM</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>   
+</body>
+</html>
